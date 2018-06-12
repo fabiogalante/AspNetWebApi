@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "51595c62-073a-3094-728b-bbb95b33d9d4",
+		"name": "AprendaDotNet",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Obter Selecoes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:5000/api/selecao",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"selecao"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar selecao",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"NomeSelecao\": \"Arábia Saudita\",\n    \"Continente\": \"Ásia\",\n    \"NumeroParticipacoes\": 5,\n    \"MelhorResultado\": \"Oitavas de final (1994)\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/selecao/criarselecao",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"selecao",
+						"criarselecao"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obter Selecao por id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:5000/api/selecao/2004/obterselecaoporid",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"selecao",
+						"2004",
+						"obterselecaoporid"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar selecao",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Id\": 2002,\n    \"NomeSelecao\": \"Rússia\",\n    \"Continente\": \"Europa\",\n    \"NumeroParticipacoes\": 11,\n    \"MelhorResultado\": \"4° lugar (1966)\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/selecao/atualizarselecao",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"selecao",
+						"atualizarselecao"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Excluir seleção",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:5000/api/selecao/2003/excluirselecao",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"selecao",
+						"2003",
+						"excluirselecao"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
